@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(248, 249, 249);
+  overflow-x: hidden;
+}
+
+.SiteSections {
+  padding: 48px 160px 0 160px;
+  width: 100%;
+}

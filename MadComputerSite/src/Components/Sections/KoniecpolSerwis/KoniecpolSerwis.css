@@ -1,0 +1,76 @@
+.KoniecpolSerwisSection {
+  font-family: "Google Sans";
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: max-content;
+  min-height: 600px;
+
+  padding-left: 40px;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  box-shadow: 0 0 12px hsl(180, 5%, 93%);
+  background-color: rgb(231, 235, 238);
+}
+
+.KoniecpolSerwisSection h1 {
+  margin: 20px 0 20px 0;
+}
+
+.MapDivKoniecpolSerwis {
+  min-width: 1000px;
+  padding-right: 160px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.SerwisInfoDiv {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+
+  padding: 40px 40px 40px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.SerwisInfoDiv label {
+  padding: 12px 0 0 0;
+}
+
+.SerwisButton {
+  font-family: "Google Sans";
+  font-weight: 900;
+  font-size: 1.125rem;
+
+  margin: 0;
+  border: 0 solid white;
+
+  width: 325px;
+  height: 62px;
+  border-radius: 100px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.SerwisButton:hover {
+  transform: scale(1.05);
+}
+
+.SerwisButtonDiv {
+  padding: 0 160px 0 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DivMapSerwis {
+  padding: 60px 0 40px 0;
+}
