@@ -14,3 +14,9 @@ body {
   padding: 48px 160px 0 160px;
   width: 100%;
 }
+
+@media (max-width: 1024px) {
+  .SiteSections {
+    padding: 24px 8px 0 8px;
+  }
+}

@@ -86,3 +86,23 @@
 .buttonFotowolta:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 1024px) {
+  .Fotowolta {
+    padding: 2rem 1rem;
+    border-radius: 20px;
+  }
+  .FotowoltaMain {
+    max-width: 100%;
+  }
+  .FotowoltaMain h1 {
+    font-size: 32px;
+  }
+  .pFotowolta {
+    font-size: 16px;
+  }
+  .buttonFotowolta {
+    width: 100%;
+    max-width: 325px;
+  }
+}

@@ -74,3 +74,29 @@
 .DivMapSerwis {
   padding: 60px 0 40px 0;
 }
+
+@media (max-width: 1024px) {
+  .KoniecpolSerwisSection {
+    padding-left: 0;
+  }
+  .MapDivKoniecpolSerwis {
+    min-width: 100%;
+    padding-right: 0;
+    flex-direction: column-reverse;
+  }
+  .SerwisInfoDiv {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .SerwisButtonDiv {
+    padding: 20px;
+  }
+  .DivMapSerwis {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+}

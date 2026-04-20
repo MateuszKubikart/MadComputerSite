@@ -12,3 +12,10 @@
 .MapWrapper iframe {
   display: block;
 }
+
+@media (max-width: 1024px) {
+  .MapWrapper {
+    min-width: 100%;
+    border-radius: 16px;
+  }
+}

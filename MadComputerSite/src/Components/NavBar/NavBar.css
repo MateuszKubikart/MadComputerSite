@@ -34,7 +34,7 @@ header {
   flex-direction: column;
   justify-content: center;
 
-  padding: 0 22px;
+  padding: 0 16px;
   margin: 0 10px;
   font-family: "Google Sans";
   font-weight: 500;
@@ -49,6 +49,10 @@ header {
 
 .NavBarLi:hover {
   background-color: rgb(222, 224, 225);
+}
+
+.NavBarLi a {
+  white-space: nowrap;
 }
 
 .NavBar {
