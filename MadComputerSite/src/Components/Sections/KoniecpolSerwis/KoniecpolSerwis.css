@@ -12,7 +12,7 @@
   padding-left: 40px;
   margin-bottom: 4rem;
   overflow: hidden;
-  box-shadow: 0 0 12px hsl(180, 5%, 93%);
+  box-shadow: 0 0 12px hsl(0, 6%, 93%);
   background-color: rgb(231, 235, 238);
 }
 
@@ -22,7 +22,6 @@
 
 .MapDivKoniecpolSerwis {
   min-width: 1000px;
-  padding-right: 160px;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -32,7 +31,7 @@
   font-weight: 500;
   width: 100%;
 
-  padding: 40px 40px 40px 120px;
+  padding: 40px 40px 40px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -40,6 +39,37 @@
 
 .SerwisInfoDiv label {
   padding: 12px 0 0 0;
+}
+
+.SerwisInfoDiv h1 {
+  padding-bottom: 48px;
+}
+
+.SerwisInfoDiv h3 {
+  padding: 0;
+  padding-bottom: 24px;
+  margin: 0;
+}
+
+.SerwisInfoDiv a {
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+.SerwisInfoDiv ul {
+  padding-bottom: 24px;
+  margin: 12px;
+  padding-left: 32px;
+}
+
+.SerwisInfoDiv a:hover {
+  text-decoration-color: red;
+  color: red;
+}
+
+.serwisBoldText {
+  font-weight: 800;
 }
 
 .SerwisButton {
@@ -72,7 +102,7 @@
 }
 
 .DivMapSerwis {
-  padding: 60px 0 40px 0;
+  padding: 60px 16px 40px 16px;
 }
 
 @media (max-width: 1024px) {
@@ -87,13 +117,13 @@
   .SerwisInfoDiv {
     padding: 20px;
     align-items: center;
-    text-align: center;
+    text-align: start;
   }
   .SerwisButtonDiv {
     padding: 20px;
   }
   .DivMapSerwis {
-    padding: 20px 0;
+    padding: 20px 20px;
     width: 100%;
     display: flex;
     justify-content: center;

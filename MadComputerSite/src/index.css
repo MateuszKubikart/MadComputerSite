@@ -11,8 +11,15 @@ body {
 }
 
 .SiteSections {
-  padding: 48px 160px 0 160px;
+  padding-top: 48px;
   width: 100%;
+}
+
+.sectionSizer {
+  width: 100%; /* Na małych ekranach zajmij 100% */
+  max-width: 1200px; /* Na dużych zatrzymaj się na tej szerokości */
+  margin: 0 auto; /* Centrowanie: góra/dół 0, boki automatyczne */
+  padding: 0 20px; /* Bezpieczny odstęp od krawędzi na telefonach */
 }
 
 @media (max-width: 1024px) {
