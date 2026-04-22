@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.DPDDiv {
+  font-family: "Google Sans";
+}
+
+.DPDDiv h1 {
+  font-size: 80px;
+  margin-top: 0;
+}
+
+.DPDSizeDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.DPD_p {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 20px;
+  width: fit-content;
+}
+
+.DPD_p li {
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.DivInfoOpen {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.DivInfoOpen h3 {
+  margin: 0;
+}
