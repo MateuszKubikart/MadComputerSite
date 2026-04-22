@@ -1,109 +1,48 @@
-import { useState, useEffect } from "react";
-import logo from "../../assets/MadComputerLogo.png";
+import { Link, useLocation } from "react-router-dom";
 import "./NavBar.css";
 
 function NavBar() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1075);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const currentPath = location.pathname;
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 1075);
-      if (window.innerWidth > 1075) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const navItems = (
-    <ul className={`NavBarUl ${isMenuOpen ? "mobile-open" : ""}`}>
-      <li className="NavBarLi">
-        <div>
-          <a>Serwis</a>
-        </div>
-      </li>
-      <li className="NavBarLi">
-        <div>
-          <a>Fotowoltaika</a>
-        </div>
-      </li>
-      <li className="NavBarLi">
-        <div>
-          <a>Kasy Fiskalne</a>
-        </div>
-      </li>
-      <li className="NavBarLi">
-        <div>
-          <a>Usługi</a>
-        </div>
-      </li>
-      <li className="NavBarLi">
-        <div>
-          <a>Cennik</a>
-        </div>
-      </li>
-      <li className="NavBarLi">
-        <div>
-          <a>DPD Pickup</a>
-        </div>
-      </li>
-      <li className="NavBarLi">
-        <div>
-          <a>O nas</a>
-        </div>
-      </li>
-      <li className="NavBarLi">
-        <div>
-          <a>Kontakt</a>
-        </div>
-      </li>
-    </ul>
-  );
+  const navLinks = [
+    { name: "Serwis", path: "/" },
+    { name: "Kasy Fiskalne", path: "/kasy-fiskalne" },
+    { name: "Fotowoltaika", path: "/fotowoltaika" },
+    { name: "DPD PickUp", path: "/dpd" },
+    { name: "O nas", path: "/o-nas" },
+  ];
 
   return (
-    <header>
-      <div className={`NavBarDiv ${isScrolled ? "no-shadow" : ""}`}>
-        <a href="/" className="NavLogo">
-          <img src={logo} alt="Logo Sklepu" width="100px" />
-        </a>
-
-        {isMobileView ? (
-          <div className="MobileMenuContainer">
-            <button className="MenuToggle" onClick={toggleMenu}>
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="5" r="2" fill="#252526" />
-                <circle cx="12" cy="12" r="2" fill="#252526" />
-                <circle cx="12" cy="19" r="2" fill="#252526" />
-              </svg>
-            </button>
-            {isMenuOpen && <nav className="NavBarMobile">{navItems}</nav>}
+    <header className="navbar-header">
+      <div className="container">
+        <nav className="navbar-container">
+          <div className="navbar-brand">
+            <Link to="/">
+              {/* Tutaj możemy użyć logo z pliku lub tekstu jak w wizualizacji */}
+              <span className="brand-text">Mad Computer</span>
+            </Link>
           </div>
-        ) : (
-          <nav className="NavBar">{navItems}</nav>
-        )}
+
+          <ul className="navbar-nav">
+            {navLinks.map((link) => (
+              <li key={link.name} className="nav-item">
+                <Link
+                  to={link.path}
+                  className={`nav-link ${currentPath === link.path ? "active" : ""}`}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <div className="navbar-action">
+            <Link to="/contact" className="btn btn-primary">
+              Kontakt
+            </Link>
+          </div>
+        </nav>
       </div>
     </header>
   );

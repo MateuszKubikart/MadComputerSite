@@ -1,117 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-header {
+.navbar-header {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.322);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 50;
 }
 
-.NavBarDiv {
-  background-color: rgb(255, 255, 255);
+.navbar-container {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
-  border-radius: 0px;
-  transition: box-shadow 0.1s ease;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
 }
 
-.NavBarDiv.no-shadow {
-  box-shadow: none;
+.navbar-brand {
+  flex-shrink: 0;
 }
 
-.NavBarUl {
+.brand-text {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-primary);
+  letter-spacing: -0.5px;
+}
+
+.navbar-nav {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding-right: 10%;
+  align-items: center;
+  gap: 32px;
+  height: 100%;
 }
 
-.NavBarLi {
+.nav-item {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
 
-  padding: 0 16px;
-  margin: 0 10px;
-  font-family: "Google Sans";
+.nav-link {
+  font-size: 14px;
   font-weight: 500;
-  color: rgb(37, 37, 38);
-  font-size: 20px;
-  cursor: pointer;
-  height: 48px;
-  border-radius: 8px;
-
-  transition: 0.5s;
-}
-
-.NavBarLi:hover {
-  background-color: rgb(222, 224, 225);
-}
-
-.NavBarLi a {
-  white-space: nowrap;
-}
-
-.NavBar {
-  width: 100%;
-  align-content: center;
-}
-
-.NavLogo {
-  margin: 8px;
-  padding-left: 48px;
-}
-
-/* Mobile Menu Styles */
-.MobileMenuContainer {
-  margin-left: auto;
+  color: var(--color-text-main);
+  height: 100%;
   display: flex;
   align-items: center;
-  padding-right: 20px;
-  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
 }
 
-.MenuToggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1001;
+.nav-link:hover {
+  color: var(--color-primary);
 }
 
-.NavBarMobile {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 10px 10px;
-  width: 250px;
-  z-index: 1000;
+.nav-link.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
 }
 
-.NavBarMobile .NavBarUl {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 0;
-  width: 100%;
-}
-
-.NavBarMobile .NavBarLi {
-  width: 100%;
-  margin: 0;
-  padding: 0 20px;
-  justify-content: center;
-  height: 50px;
-  border-radius: 0;
-}
-
-.NavBarMobile .NavBarLi:hover {
-  background-color: rgb(240, 240, 240);
+.navbar-action {
+  flex-shrink: 0;
 }

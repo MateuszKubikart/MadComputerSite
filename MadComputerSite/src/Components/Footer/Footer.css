@@ -1,0 +1,40 @@
+.footer-container {
+  background-color: var(--color-bg);
+  padding: 48px 0 32px;
+  border-top: 1px solid var(--color-border);
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text-main);
+  margin-bottom: 8px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-text-main);
+}
