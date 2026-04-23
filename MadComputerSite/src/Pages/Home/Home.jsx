@@ -12,6 +12,7 @@ import {
   Siren,
   Wrench,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import compServiceImg from "../../assets/CompService.jpg";
 
@@ -180,9 +181,9 @@ function Home() {
                   online i skuteczną wideoweryfikację zdarzeń z dowolnego
                   miejsca na świecie.
                 </p>
-                <a href="#" className="link-more">
+                <Link to="/Uslugi#monitoring" className="link-more">
                   Przeczytaj więcej <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -198,9 +199,9 @@ function Home() {
                   garażowych, zdalne sterowanie smartfonem oraz maksymalny
                   komfort codziennego użytkowania.
                 </p>
-                <a href="#" className="link-more">
+                <Link to="/Uslugi#automatyka" className="link-more">
                   Przeczytaj więcej <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -216,9 +217,9 @@ function Home() {
                   natychmiastowe powiadomienie o zagrożeniu i pełne
                   bezpieczeństwo Twojego mienia przez całą dobę.
                 </p>
-                <a href="#" className="link-more">
+                <Link to="/Uslugi#alarmy" className="link-more">
                   Przeczytaj więcej <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -233,12 +234,14 @@ function Home() {
               <div className="stat-number">15+</div>
               <div className="stat-label">LAT DOŚWIADCZENIA</div>
             </div>
-            <div className="stat-item">
+            <div className="stat-item" style={{ backgroundColor: "red" }}>
               <div className="stat-number">####</div>
               <div className="stat-label">##### ###### ##</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">67 000+</div>
+              <div className="stat-number" style={{ backgroundColor: "red" }}>
+                10 000+
+              </div>
               <div className="stat-label">OBSŁUŻONYCH KLIENTÓW</div>
             </div>
           </div>

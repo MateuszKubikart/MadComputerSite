@@ -5,6 +5,7 @@
 /* Common Section Layouts */
 .uslugi-section {
   padding: 64px 0;
+  scroll-margin-top: 80px; /* Zapobiega chowaniu się sekcji pod navbarem przy scrollowaniu do #id */
 }
 
 .uslugi-grid {

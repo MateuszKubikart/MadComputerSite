@@ -1,7 +1,24 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { CheckCircle2, Phone, Video, ShieldAlert, Cpu } from "lucide-react";
 import "./Uslugi.css";
 
 function Uslugi() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
     <div className="uslugi-page">
       {/* Hero Section */}
@@ -20,7 +37,7 @@ function Uslugi() {
                 <span className="text-primary">Automatyka</span> dla Twojego
                 domu
               </h1>
-              <p className="hero-description">
+              <p className="hero-description" style={{ color: "red" }}>
                 Zapewniamy profesjonalny montaż i serwis nowoczesnych systemów
                 monitoringu, automatyki bram i systemów alarmowych. Technologia,
                 której możesz ufać.
@@ -29,7 +46,11 @@ function Uslugi() {
                 <a href="#kontakt" className="btn btn-primary">
                   Skonsultuj projekt
                 </a>
-                <a href="#" className="btn btn-outline">
+                <a
+                  href="#"
+                  className="btn btn-outline"
+                  style={{ backgroundColor: "red" }}
+                >
                   Nasze realizacje
                 </a>
               </div>
@@ -47,7 +68,7 @@ function Uslugi() {
       </section>
 
       {/* Inteligentny Monitoring */}
-      <section className="uslugi-section">
+      <section id="monitoring" className="uslugi-section">
         <div className="container">
           <div className="uslugi-grid reverse-mobile">
             <div className="text-content">
@@ -62,11 +83,11 @@ function Uslugi() {
                 obrazu.
               </p>
               <ul className="feature-list">
-                <li>
+                <li style={{ backgroundColor: "red" }}>
                   <CheckCircle2 size={20} />
                   <span>Dostęp zdalny z poziomu aplikacji na smartfonie.</span>
                 </li>
-                <li>
+                <li style={{ backgroundColor: "red" }}>
                   <CheckCircle2 size={20} />
                   <span>
                     Zaawansowana detekcja ruchu i rozpoznawanie obiektów.
@@ -94,6 +115,7 @@ function Uslugi() {
 
       {/* Automatyka Bram */}
       <section
+        id="automatyka"
         className="uslugi-section"
         style={{ backgroundColor: "#fafafa" }}
       >
@@ -137,7 +159,7 @@ function Uslugi() {
       </section>
 
       {/* Systemy Alarmowe */}
-      <section className="uslugi-section">
+      <section id="alarmy" className="uslugi-section">
         <div className="container">
           <div className="uslugi-grid reverse-mobile">
             <div className="text-content">
