@@ -13,6 +13,7 @@ import {
   Phone,
 } from "lucide-react";
 import "./Fotowoltaika.css";
+import FotowoltaikaBG from "../../assets/FotowoltaikaBG.webp";
 
 function Photovoltaics() {
   return (
@@ -44,7 +45,10 @@ function Photovoltaics() {
             </div>
             <div className="hero-image-wrapper">
               <div className="img-placeholder" style={{ aspectRatio: "4/3" }}>
-                <span style={{ color: "#aaa" }}>Zastępcze zdjęcie paneli</span>
+                <img
+                  src={FotowoltaikaBG}
+                  alt="Zdjęcie Paneli Fotowolaicznych"
+                />
               </div>
               <div className="savings-card">
                 <div className="savings-header">
@@ -119,7 +123,7 @@ function Photovoltaics() {
                 <div className="card-icon red-icon">
                   <ShieldCheck size={24} />
                 </div>
-                <h3>Do 25 Lat Gwarancji</h3>
+                <h3 style={{ color: "red" }}>Do ## Lat Gwarancji</h3>
                 <p>
                   Spokój ducha dzięki naszym kompleksowym, wiodącym w branży
                   gwarancjom na podzespoły i montaż.
@@ -133,11 +137,10 @@ function Photovoltaics() {
                 <div className="card-icon green-icon">
                   <Grid size={24} />
                 </div>
-                <h3>Komponenty Klasy Tier-1</h3>
-                <p>
+                <h3>Komponenty Najwyższej Jakości</h3>
+                <p style={{ color: "red" }}>
                   Używamy wyłącznie wysokowydajnych modułów i inteligentnych
-                  falowników od wiodących producentów, takich jak Jinko, Huawei
-                  i Growatt.
+                  falowników od producentów, takich jak ##### i ########.
                 </p>
               </div>
               <div className="placeholder-texture"></div>
@@ -162,8 +165,10 @@ function Photovoltaics() {
               <div className="step-icon">
                 <ClipboardCheck size={28} />
               </div>
-              <h4>1. Audyt Energetyczny</h4>
-              <p>Bezpłatne oględziny i dokładna analiza zapotrzebowania.</p>
+              <h4 style={{ color: "red" }}>1. Audyt Energetyczny</h4>
+              <p style={{ color: "red" }}>
+                Bezpłatne oględziny i dokładna analiza zapotrzebowania.
+              </p>
             </div>
             <div className="step">
               <div className="step-icon">
@@ -195,7 +200,9 @@ function Photovoltaics() {
         <div className="container">
           <div className="projects-header">
             <div>
-              <h2 className="section-title">Zrealizowane Projekty</h2>
+              <h2 className="section-title" style={{ color: "red" }}>
+                Zrealizowane Projekty
+              </h2>
               <p className="section-subtitle">
                 Zobacz, jak pomogliśmy obniżyć rachunki lokalnym firmom i
                 domostwom.
@@ -254,14 +261,13 @@ function Photovoltaics() {
               <h2 className="section-title text-white">
                 Gotowy na Oszczędności ze Słońca?
               </h2>
-              <p className="form-desc">
-                Wypełnij poniższy formularz, a nasz doradca techniczny
-                przygotuje wstępną wycenę oraz projekt systemu w ciągu 24
-                godzin.
+              <p className="form-desc" style={{ color: "red" }}>
+                Zadzwoń do nas, a przygotujemy wstępną wycenę oraz projekt
+                systemu.
               </p>
 
               <ul className="form-benefits">
-                <li>
+                <li style={{ color: "red" }}>
                   <CheckCircle2 color="var(--color-green)" size={20} /> Darmowa
                   konsultacja techniczna u Ciebie
                 </li>
@@ -269,7 +275,7 @@ function Photovoltaics() {
                   <CheckCircle2 color="var(--color-green)" size={20} />{" "}
                   Spersonalizowane wyliczenia zwrotu z inwestycji
                 </li>
-                <li>
+                <li style={{ color: "red" }}>
                   <CheckCircle2 color="var(--color-green)" size={20} />{" "}
                   Kompleksowa pomoc w pozyskaniu dofinansowania
                 </li>
