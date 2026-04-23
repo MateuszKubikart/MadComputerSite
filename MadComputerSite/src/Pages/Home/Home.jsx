@@ -8,6 +8,9 @@ import {
   Clock,
   Phone,
   Mail,
+  Cctv,
+  Siren,
+  Wrench,
 } from "lucide-react";
 import "./Home.css";
 import compServiceImg from "../../assets/CompService.jpg";
@@ -164,6 +167,60 @@ function Home() {
                 <span>Kościelna 12, 42-230 Koniecpol</span>
               </div>
             </div>
+
+            {/* MALA KARTA GORA - MONITORING */}
+            <div className="bento-card">
+              <div className="card-content">
+                <div className="card-icon red-icon">
+                  <Cctv size={24} />
+                </div>
+                <h3>Monitoring</h3>
+                <p>
+                  Wdrożenie nowoczesnych systemów umożliwiających stały podgląd
+                  online i skuteczną wideoweryfikację zdarzeń z dowolnego
+                  miejsca na świecie.
+                </p>
+                <a href="#" className="link-more">
+                  Przeczytaj więcej <span>→</span>
+                </a>
+              </div>
+            </div>
+
+            {/* MALA KARTA GORA - AUTOMATYKA BRAM */}
+            <div className="bento-card">
+              <div className="card-content">
+                <div className="card-icon red-icon">
+                  <Wrench size={24} />
+                </div>
+                <h3>Automatyka Bram</h3>
+                <p>
+                  Instalacja niezawodnych napędów do bram wjazdowych i
+                  garażowych, zdalne sterowanie smartfonem oraz maksymalny
+                  komfort codziennego użytkowania.
+                </p>
+                <a href="#" className="link-more">
+                  Przeczytaj więcej <span>→</span>
+                </a>
+              </div>
+            </div>
+
+            {/* MALA KARTA GORA - ALARMY */}
+            <div className="bento-card">
+              <div className="card-content">
+                <div className="card-icon red-icon">
+                  <Siren size={24} />
+                </div>
+                <h3>Systemy Alarmowe</h3>
+                <p>
+                  Projektowanie i montaż inteligentnych systemów gwarantujących
+                  natychmiastowe powiadomienie o zagrożeniu i pełne
+                  bezpieczeństwo Twojego mienia przez całą dobę.
+                </p>
+                <a href="#" className="link-more">
+                  Przeczytaj więcej <span>→</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -226,7 +283,7 @@ function Home() {
                 </div>
                 <div>
                   <h4>Telefon</h4>
-                  <p>785-347-346</p>
+                  <p>795-347-346</p>
                 </div>
               </div>
               <div className="contact-item">

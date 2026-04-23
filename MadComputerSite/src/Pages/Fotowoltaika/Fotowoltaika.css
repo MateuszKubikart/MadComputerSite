@@ -21,7 +21,7 @@
   background: white;
   padding: 16px 20px;
   border-radius: 8px;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   max-width: 250px;
 }
 
@@ -57,7 +57,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
 
 .p-card-content {
@@ -102,9 +102,17 @@
   background-color: var(--color-green-light);
 }
 
-.bar-1 { height: 40px; }
-.bar-2 { height: 60px; background-color: #86efac; }
-.bar-3 { height: 80px; background-color: var(--color-green); }
+.bar-1 {
+  height: 40px;
+}
+.bar-2 {
+  height: 60px;
+  background-color: #86efac;
+}
+.bar-3 {
+  height: 80px;
+  background-color: var(--color-green);
+}
 
 .card-green {
   background-color: #166534;
@@ -196,7 +204,7 @@
   border-radius: 8px;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .project-img {
@@ -238,8 +246,16 @@
   padding: 60px;
 }
 
+.form-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-content .text-white {
-  color: var(--color-text-main); /* Changed to fit light theme if the box isn't dark */
+  color: var(
+    --color-text-main
+  ); /* Changed to fit light theme if the box isn't dark */
 }
 
 .form-desc {
@@ -267,7 +283,7 @@
   background: white;
   padding: 32px;
   border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .form-row {
@@ -288,7 +304,9 @@
   margin-bottom: 8px;
 }
 
-.form-group input, .form-group select, .form-group textarea {
+.form-group input,
+.form-group select,
+.form-group textarea {
   width: 100%;
   padding: 12px 14px;
   border: 1px solid var(--color-border);
@@ -299,7 +317,9 @@
   transition: border-color 0.2s;
 }
 
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
   border-color: var(--color-primary);
 }
 
@@ -310,10 +330,15 @@
 }
 
 @media (max-width: 900px) {
-  .pv-hero-grid, .form-grid, .projects-grid, .bento-grid-pv {
+  .pv-hero-grid,
+  .form-grid,
+  .projects-grid,
+  .bento-grid-pv {
     grid-template-columns: 1fr;
   }
-  .card-savings, .card-green, .flex-row {
+  .card-savings,
+  .card-green,
+  .flex-row {
     grid-column: span 1;
     grid-row: span 1;
   }
