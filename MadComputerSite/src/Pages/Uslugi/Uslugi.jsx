@@ -70,7 +70,7 @@ function Uslugi() {
       {/* Inteligentny Monitoring */}
       <section id="monitoring" className="uslugi-section">
         <div className="container">
-          <div className="uslugi-grid reverse-mobile">
+          <div className="uslugi-grid">
             <div className="text-content">
               <div className="feature-badge">
                 <Video size={14} style={{ marginRight: "6px" }} /> CCTV
@@ -161,7 +161,7 @@ function Uslugi() {
       {/* Systemy Alarmowe */}
       <section id="alarmy" className="uslugi-section">
         <div className="container">
-          <div className="uslugi-grid reverse-mobile">
+          <div className="uslugi-grid">
             <div className="text-content">
               <div className="feature-badge">
                 <ShieldAlert size={14} style={{ marginRight: "6px" }} /> SYSTEMY
@@ -205,14 +205,15 @@ function Uslugi() {
       {/* Form Section */}
       <section id="kontakt" className="uslugi-contact">
         <div className="container">
-          <div className="uslugi-grid reverse-mobile">
+          <div className="uslugi-grid">
             <div className="contact-info text-content">
               <h2>Zabezpiecz swój dom już dziś</h2>
               <p>
                 Skontaktuj się z nami, aby omówić szczegóły i otrzymać darmową
                 wycenę systemu dopasowanego do Twoich potrzeb.
               </p>
-
+            </div>
+            <div className="phone-card-wrapper">
               <div className="phone-card">
                 <div className="phone-icon-wrap">
                   <Phone size={24} />

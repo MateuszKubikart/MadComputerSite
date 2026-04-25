@@ -1,0 +1,210 @@
+.carousel-slide-section {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.carousel-slide-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.carousel-slide-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.carousel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.text-primary {
+  color: #a12b23; /* from tailwind config primary-container */
+}
+
+.text-secondary {
+  color: #006d37; /* from tailwind config secondary */
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.bg-primary {
+  background-color: #a12b23;
+}
+
+.bg-secondary {
+  background-color: #006d37;
+}
+
+.animate-pulse {
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.carousel-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #1b1b1c;
+}
+
+.carousel-description {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  color: #58413e;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.carousel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.carousel-link:hover {
+  color: #ffbcb4;
+  gap: 12px;
+}
+
+.carousel-slide-image-wrapper {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.carousel-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================
+   Customizacja nawigacji Swipera
+   ============================ */
+.services-swiper {
+  width: 100%;
+}
+
+.services-swiper .swiper-button-prev,
+.services-swiper .swiper-button-next {
+  width: 64px;
+  height: 64px;
+  padding: 8px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  color: #1b1b1c;
+  transition: all 0.25s ease;
+}
+
+.services-swiper .swiper-button-prev:hover,
+.services-swiper .swiper-button-next:hover {
+  background: rgba(224, 193, 193, 0.5);
+  transform: scale(1.05);
+}
+
+.services-swiper .swiper-button-prev:after,
+.services-swiper .swiper-button-next:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.services-swiper .swiper-pagination-bullet {
+  background: #a12b23;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.services-swiper .swiper-pagination-bullet-active {
+  background: #a12b23;
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+@media (max-width: 1024px) {
+  .carousel-slide-section {
+    min-height: 400px;
+    padding: 20px 0;
+  }
+
+  .carousel-slide-container {
+    gap: 4px;
+  }
+  .carousel-slide-content {
+    gap: 4px;
+  }
+
+  .carousel-title {
+    font-size: 20px;
+  }
+  .carousel-description {
+    font-size: 14px;
+    margin: 4px 0 8px;
+  }
+
+  .carousel-badge {
+    font-size: 10px;
+    margin: 0;
+    gap: 2px;
+  }
+  .carousel-link {
+    font-size: 12px;
+  }
+  .carousel-slide-image-wrapper {
+    height: 240px;
+  }
+
+  .services-swiper .swiper-button-prev,
+  .services-swiper .swiper-button-next {
+    width: 48px;
+    height: 48px;
+  }
+}

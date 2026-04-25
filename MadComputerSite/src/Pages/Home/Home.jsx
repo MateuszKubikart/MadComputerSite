@@ -12,13 +12,17 @@ import {
   Siren,
   Wrench,
 } from "lucide-react";
+
 import { Link } from "react-router-dom";
 import "./Home.css";
 import compServiceImg from "../../assets/CompService.jpg";
+import SerwisKoniecpol from "../../assets/SerwisPhoto.webp";
+import CarouselMain from "../Carousel/CarouselMain";
 
 function Home() {
   return (
     <div className="home-page">
+      <CarouselMain />
       {/* HERO SECTION */}
       <section className="hero-section">
         <div className="container">
@@ -43,8 +47,8 @@ function Home() {
               </div>
             </div>
             <div className="hero-image">
-              <div className="img-placeholder" style={{ aspectRatio: "4/3" }}>
-                <span style={{ color: "#aaa" }}>Zdjecie serwisu</span>
+              <div className="img-placeholder" style={{ aspectRatio: "11/8" }}>
+                <img src={SerwisKoniecpol} alt="" />
               </div>
             </div>
           </div>

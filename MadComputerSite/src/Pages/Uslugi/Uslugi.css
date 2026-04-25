@@ -15,21 +15,10 @@
   align-items: center;
 }
 
-.uslugi-grid.reverse {
-  /* No need to reverse in grid by default unless we specifically reorder in CSS, but flex is sometimes easier. Let's stick to flex or grid-template-areas, or just reorder elements on mobile. */
-}
-
 @media (max-width: 900px) {
   .uslugi-grid {
     grid-template-columns: 1fr;
     gap: 32px;
-  }
-
-  .reverse-mobile .text-content {
-    order: 2;
-  }
-  .reverse-mobile .image-content {
-    order: 1;
   }
 }
 
@@ -162,6 +151,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.phone-card-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .phone-details span {
