@@ -11,6 +11,7 @@ import {
   Cctv,
   Siren,
   Wrench,
+  Printer,
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
@@ -42,13 +43,28 @@ function Home() {
                 zaawansowane technologie z niezawodnością, której możesz zaufać.
               </p>
               <div className="hero-actions">
-                <button className="btn btn-primary">Nasz Serwis</button>
+                <button className="btn btn-primary">Kontakt</button>
                 <button className="btn btn-outline">Dowiedz się więcej</button>
               </div>
             </div>
-            <div className="hero-image">
-              <div className="img-placeholder" style={{ aspectRatio: "11/8" }}>
-                <img src={SerwisKoniecpol} alt="" />
+            <div>
+              <div className="hero-image">
+                <div
+                  className="img-placeholder"
+                  style={{ aspectRatio: "11/8" }}
+                >
+                  <img src={SerwisKoniecpol} alt="" />
+                  <div className="savings-card-home">
+                    <div className="savings-header-home">
+                      <Printer
+                        size={24}
+                        strokeWidth={2.75}
+                        color="var(--color-green)"
+                      />
+                      <h4>Tutaj Wydrukujesz!</h4>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -289,7 +305,7 @@ function Home() {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <h4>Telefon</h4>
+                  <h4>Telefon do serwisu</h4>
                   <p>795-347-346</p>
                 </div>
               </div>

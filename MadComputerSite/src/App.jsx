@@ -4,7 +4,9 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Fotowoltaika from "./Pages/Fotowoltaika/Fotowoltaika.jsx";
 import Uslugi from "./Pages/Uslugi/Uslugi.jsx";
-import "./App.css"; // We'll keep generic app styles here or remove it if not needed
+import KasyFiskalne from "./Pages/KasyFiskalne/KasyFiskalne.jsx";
+import ONas from "./Pages/ONas/ONas.jsx";
+import "./App.css";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Fotowoltaika" element={<Fotowoltaika />} />
             <Route path="/Uslugi" element={<Uslugi />} />
+            <Route path="/Kasy-fiskalne" element={<KasyFiskalne />} />
+            <Route path="/O-nas" element={<ONas />} />
           </Routes>
         </main>
         <Footer />

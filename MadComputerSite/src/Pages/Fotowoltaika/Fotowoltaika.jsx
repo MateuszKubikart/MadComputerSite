@@ -31,7 +31,9 @@ function Photovoltaics() {
               </div>
               <h1 className="hero-title">
                 Zabezpiecz Swój Dom Na Przyszłość <br />z{" "}
-                <span className="text-primary">Odnawialną Energią</span>
+                <span className="text-primary">
+                  Odnawialną Energią <Leaf size={42} strokeWidth={2.75} />
+                </span>
               </h1>
               <p className="hero-description">
                 Obniż rachunki za prąd nawet o 80% i zadbaj o czystszą planetę.

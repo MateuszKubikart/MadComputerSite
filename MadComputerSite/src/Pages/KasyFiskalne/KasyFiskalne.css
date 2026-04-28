@@ -1,0 +1,301 @@
+.kasy-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utils */
+.text-muted {
+  color: var(--color-text-muted);
+}
+.bg-surface-low {
+  background-color: #f6f3f4;
+}
+.bg-surface-variant {
+  background-color: #e5e2e3;
+}
+.btn-large {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+.w-full {
+  width: 100%;
+}
+
+/* Hero Section */
+.kasy-hero {
+  padding: 64px 24px;
+}
+.kasy-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.kasy-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.kasy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  width: max-content;
+}
+.kasy-hero-title {
+  font-size: 48px;
+  line-height: 1.2;
+}
+.kasy-hero-desc {
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+.kasy-hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.kasy-hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.kasy-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Brands Section */
+.kasy-brands {
+  padding-bottom: 64px;
+  text-align: center;
+}
+.kasy-brands-title {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+}
+.kasy-brands-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+.kasy-brands-logos:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.kasy-brands-logos img {
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Services Section */
+.kasy-services-wrapper {
+  background-color: #f6f3f4;
+  padding: 96px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.kasy-services-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.kasy-services-header h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.kasy-services-header p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.kasy-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.kasy-service-card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.kasy-service-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+.kasy-service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: transform 0.2s ease;
+}
+.kasy-service-card:hover .kasy-service-icon {
+  transform: scale(1.05);
+}
+.kasy-service-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.kasy-service-card p {
+  flex-grow: 1;
+}
+.kasy-service-features {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.kasy-service-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Why Us Section */
+.kasy-why-us {
+  padding: 96px 24px;
+}
+.kasy-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.kasy-why-image-wrapper {
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+}
+.kasy-why-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.kasy-why-content h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.kasy-why-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+.kasy-why-icon {
+  padding: 12px;
+  border-radius: 8px;
+}
+.kasy-why-item h4 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.kasy-why-item p {
+  font-size: 14px;
+}
+
+/* Contact Form Section */
+.kasy-contact-wrapper {
+  padding: 96px 0;
+}
+.kasy-contact {
+  max-width: 800px;
+}
+.kasy-contact-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+  padding: 48px;
+}
+.kasy-contact-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.kasy-contact-header h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.kasy-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(138, 17, 17, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .kasy-hero-grid,
+  .kasy-why-grid,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .kasy-services-grid {
+    grid-template-columns: 1fr;
+  }
+  .kasy-hero-title {
+    font-size: 36px;
+  }
+  .kasy-hero-actions {
+    flex-direction: column;
+  }
+  .kasy-brands-logos img {
+    height: 32px;
+  }
+  .kasy-contact-card {
+    padding: 24px;
+  }
+}

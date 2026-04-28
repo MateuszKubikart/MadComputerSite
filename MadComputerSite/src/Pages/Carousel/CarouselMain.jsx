@@ -16,6 +16,7 @@ import {
   AutomatykaBram,
   SystemyAlarmowe,
   InteligentnyMonitoring,
+  SerwisRMA,
 } from "./Components";
 
 // Dodatkowy plik css do nadpisania css dla swipera
@@ -23,14 +24,15 @@ import "./Carousel.css";
 
 export default function CarouselMain() {
   const slides = [
-    <SkladanieKomputerow key="1" />,
-    <KasyFiskalne key="2" />,
-    <DpdPickup key="3" />,
-    <Fotowoltaika key="4" />,
-    <SerwisElektryki key="5" />,
-    <AutomatykaBram key="6" />,
-    <SystemyAlarmowe key="7" />,
-    <InteligentnyMonitoring key="8" />,
+    <Fotowoltaika key="1" />,
+    <SerwisRMA key="2" />,
+    <SkladanieKomputerow key="3" />,
+    <KasyFiskalne key="4" />,
+    <DpdPickup key="5" />,
+    <SerwisElektryki key="6" />,
+    <AutomatykaBram key="7" />,
+    <SystemyAlarmowe key="8" />,
+    <InteligentnyMonitoring key="9" />,
   ];
 
   return (
@@ -41,7 +43,7 @@ export default function CarouselMain() {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 500000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         navigation={true}
