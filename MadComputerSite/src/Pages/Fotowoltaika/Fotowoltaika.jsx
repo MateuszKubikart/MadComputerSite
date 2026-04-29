@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Phone,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./Fotowoltaika.css";
 import FotowoltaikaBG from "../../assets/FotowoltaikaBG.webp";
 
@@ -210,9 +211,9 @@ function Photovoltaics() {
                 domostwom.
               </p>
             </div>
-            <a href="#" className="view-gallery">
+            <Link to="/Fotowoltaika/Projekty" className="view-gallery">
               Zobacz Całą Galerię <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
 
           <div className="projects-grid">

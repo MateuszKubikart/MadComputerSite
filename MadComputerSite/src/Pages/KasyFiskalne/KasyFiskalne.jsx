@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import farexLogo from "../../assets/farex.png";
 import posnetLogo from "../../assets/posnet.png";
+import serwisKasy from "../../assets/SerwisKasy.webp";
 import "./KasyFiskalne.css";
 
 export default function KasyFiskalne() {
@@ -47,7 +48,7 @@ export default function KasyFiskalne() {
           </div>
           <div className="kasy-hero-image-wrapper">
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI14Xxbq0ZlwuIIMi0041ZeYrHEeePi56_thJEb3epU_wpO3Yze5vEH4ZrexIYHWLbAGPgEA6noNsmuskKEMZv_-ZVJmJZuo4Y6zwALxbDtm6E3iwJt7STdtsGNQjduikbuwNUjensUt0T_2YC_9lZxMK2Y0w24Ef5A1Uhb1K0LcaUwjZbvwTkoNagPiAD-WWwCHM34kR5hnlWqvMUG7vWd9ngAPsYdoCVBd-fhRUV6aJdwvxI4eAX4k3lsk0jB2k-HqS11vyJVTsU"
+              src={serwisKasy}
               alt="Kasa fiskalna"
               className="kasy-hero-img"
             />
@@ -150,7 +151,7 @@ export default function KasyFiskalne() {
       <section className="kasy-why-us container">
         <div className="kasy-why-grid">
           <div className="kasy-why-image-wrapper">
-            <img src="" alt="Zdjęcie" />
+            <img src="" alt="" />
           </div>
           <div className="kasy-why-content">
             <h2>Dlaczego my?</h2>

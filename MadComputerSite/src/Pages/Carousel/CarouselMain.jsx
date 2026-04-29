@@ -25,9 +25,9 @@ import "./Carousel.css";
 export default function CarouselMain() {
   const slides = [
     <Fotowoltaika key="1" />,
-    <SerwisRMA key="2" />,
-    <SkladanieKomputerow key="3" />,
-    <KasyFiskalne key="4" />,
+    <KasyFiskalne key="2" />,
+    <SerwisRMA key="3" />,
+    <SkladanieKomputerow key="4" />,
     <DpdPickup key="5" />,
     <SerwisElektryki key="6" />,
     <AutomatykaBram key="7" />,

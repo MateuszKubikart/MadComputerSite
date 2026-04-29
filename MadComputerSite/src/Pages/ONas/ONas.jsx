@@ -153,11 +153,11 @@ export default function ONas() {
       {/* LOCATION SECTION */}
       <section className="o-nas-location bg-surface-low">
         <div className="container">
-          <h2 className="section-title">Lokalizacja serwisu</h2>
+          <h2 className="section-title">Serwis w Koniecpolu</h2>
           <div className="location-grid">
             <div className="location-card">
               <div className="location-info-block mb-8">
-                <h3 className="location-info-title">Siedziba firmy</h3>
+                <h3 className="location-info-title">Adres Serwisu</h3>
                 <div className="location-info-item">
                   <MapPin size={20} className="text-primary" />
                   <span className="text-muted">

@@ -1,6 +1,12 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { CheckCircle2, Phone, Video, ShieldAlert, Cpu } from "lucide-react";
+
+import housePhoto from "../../assets/56087c1ee3bf9786c17720fdb54d5b9e.jpg";
+import cameraPhoto from "../../assets/44.jpg";
+import gatePhoto from "../../assets/45.jpg";
+import securityPhoto from "../../assets/43.jpg";
+
 import "./Uslugi.css";
 
 function Uslugi() {
@@ -37,7 +43,7 @@ function Uslugi() {
                 <span className="text-primary">Automatyka</span> dla Twojego
                 domu
               </h1>
-              <p className="hero-description" style={{ color: "red" }}>
+              <p className="hero-description">
                 Zapewniamy profesjonalny montaż i serwis nowoczesnych systemów
                 monitoringu, automatyki bram i systemów alarmowych. Technologia,
                 której możesz ufać.
@@ -46,11 +52,7 @@ function Uslugi() {
                 <a href="#kontakt" className="btn btn-primary">
                   Skonsultuj projekt
                 </a>
-                <a
-                  href="#"
-                  className="btn btn-outline"
-                  style={{ backgroundColor: "red" }}
-                >
+                <a href="#" className="btn btn-outline">
                   Nasze realizacje
                 </a>
               </div>
@@ -60,7 +62,7 @@ function Uslugi() {
                 className="img-placeholder"
                 style={{ aspectRatio: "4/3", backgroundColor: "#0f4c81" }}
               >
-                <span style={{ color: "white" }}>Kamera (Placeholder)</span>
+                <img src={housePhoto} alt="Zdjęcie autonomiczenego domu" />
               </div>
             </div>
           </div>
@@ -68,7 +70,7 @@ function Uslugi() {
       </section>
 
       {/* Inteligentny Monitoring */}
-      <section id="monitoring" className="uslugi-section">
+      <section id="monitoring" className="uslugi-section section-bg-css">
         <div className="container">
           <div className="uslugi-grid">
             <div className="text-content">
@@ -83,11 +85,11 @@ function Uslugi() {
                 obrazu.
               </p>
               <ul className="feature-list">
-                <li style={{ backgroundColor: "red" }}>
+                <li>
                   <CheckCircle2 size={20} />
                   <span>Dostęp zdalny z poziomu aplikacji na smartfonie.</span>
                 </li>
-                <li style={{ backgroundColor: "red" }}>
+                <li>
                   <CheckCircle2 size={20} />
                   <span>
                     Zaawansowana detekcja ruchu i rozpoznawanie obiektów.
@@ -106,7 +108,7 @@ function Uslugi() {
                 className="img-placeholder feature-image"
                 style={{ backgroundColor: "#222" }}
               >
-                <span style={{ color: "#aaa" }}>Monitory (Placeholder)</span>
+                <img src={cameraPhoto} alt="Zdjęcie kamery" />
               </div>
             </div>
           </div>
@@ -116,7 +118,7 @@ function Uslugi() {
       {/* Automatyka Bram */}
       <section
         id="automatyka"
-        className="uslugi-section"
+        className="uslugi-section section-bg-css"
         style={{ backgroundColor: "#fafafa" }}
       >
         <div className="container">
@@ -126,7 +128,7 @@ function Uslugi() {
                 className="img-placeholder feature-image"
                 style={{ backgroundColor: "#e5e7eb" }}
               >
-                <span style={{ color: "#777" }}>Napęd Bramy (Placeholder)</span>
+                <img src={gatePhoto} alt="Zdjęcie bramy automatycznej" />
               </div>
             </div>
             <div className="text-content">
@@ -159,7 +161,7 @@ function Uslugi() {
       </section>
 
       {/* Systemy Alarmowe */}
-      <section id="alarmy" className="uslugi-section">
+      <section id="alarmy" className="uslugi-section section-bg-css">
         <div className="container">
           <div className="uslugi-grid">
             <div className="text-content">
@@ -193,11 +195,61 @@ function Uslugi() {
                 className="img-placeholder feature-image"
                 style={{ backgroundColor: "#eef2f6" }}
               >
-                <span style={{ color: "#777" }}>
-                  Klawiatura Alarmu (Placeholder)
-                </span>
+                <img src={securityPhoto} alt="Zdjęcie Alarmu" />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi-projects" className="uslugi-projects-section">
+        <div className="container">
+          <h2 className="projects-heading">Nasze Realizacje</h2>
+          <p className="projects-subheading">
+            Zobacz wybrane projekty, które zrealizowaliśmy dla naszych klientów.
+          </p>
+          <div className="projects-grid">
+            <div className="project-card">
+              <div className="project-image-wrapper">
+                <img src={cameraPhoto} alt="Instalacja monitoringu" />
+              </div>
+              <div className="project-card-body">
+                <h3>Monitoring domu jednorodzinnego</h3>
+                <p>
+                  Kompleksowa instalacja 6 kamer IP z podglądem online i
+                  rejestracją 24/7.
+                </p>
+              </div>
+            </div>
+            <div className="project-card">
+              <div className="project-image-wrapper">
+                <img src={gatePhoto} alt="Automatyka bramy" />
+              </div>
+              <div className="project-card-body">
+                <h3>Automatyzacja bramy wjazdowej</h3>
+                <p>
+                  Montaż napędu bramy przesuwnej ze sterowaniem z aplikacji
+                  mobilnej.
+                </p>
+              </div>
+            </div>
+            <div className="project-card">
+              <div className="project-image-wrapper">
+                <img src={securityPhoto} alt="System alarmowy" />
+              </div>
+              <div className="project-card-body">
+                <h3>System alarmowy dla firmy</h3>
+                <p>
+                  Wdrożenie systemu z czujnikami ruchu, syrenami i
+                  powiadomieniem SMS.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="projects-cta">
+            <a href="#" className="btn btn-primary">
+              Zobacz pełną galerię →
+            </a>
           </div>
         </div>
       </section>

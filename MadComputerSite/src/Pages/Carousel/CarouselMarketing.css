@@ -1,30 +1,283 @@
 /* CarouselMarketing.css */
 
-.marketing-section {
-  min-height: 650px;
+/* fotowoltaics */
+.section-fotowoltaics {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/FotowoltaikaBG.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.marketing-container-fotowoltaics {
   display: flex;
-  align-items: center;
-  padding: 96px 0;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 8%;
   width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.marketing-container-fotowoltaics h1 {
+  color: white;
+  font-size: 60px;
+  padding-top: 32px;
 }
 
-.marketing-bg-surface {
-  background-color: #fcf8f9;
+.marketing-container-fotowoltaics-l2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+}
+.marketing-container-fotowoltaics-l2 h2 {
+  color: white;
+  font-size: 24px;
+  max-width: 540px;
 }
 
-.marketing-bg-bright {
-  background-color: #ffffff;
+.buttons-fotowoltaics {
+  padding-top: 100px;
+}
+.buttons-fotowoltaics a {
+  margin-right: 24px;
 }
 
-.marketing-container {
-  max-width: 1280px;
+@media (max-width: 768px) {
+  .marketing-container-fotowoltaics h1 {
+    font-size: 36px;
+    padding-top: 16px;
+  }
+  .marketing-container-fotowoltaics-l2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons-fotowoltaics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 32px;
+  }
+  .buttons-fotowoltaics a {
+    margin-bottom: 24px;
+  }
+}
+
+/* kasy-fiskalne */
+.section-kasy {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/KasaFiskalnaSerwis.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.marketing-container-kasy {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 8%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.marketing-container-kasy h1 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  padding-top: 32px;
+}
+
+.marketing-container-kasy-l2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+}
+.marketing-container-kasy-l2 h2 {
+  color: white;
+  font-size: 24px;
+  max-width: 540px;
+}
+.text-kasy {
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.buttons-kasy {
+  padding-top: 100px;
+}
+
+.buttons-kasy a {
+  margin-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .marketing-container-kasy h1 {
+    font-size: 36px;
+    padding-top: 16px;
+  }
+  .marketing-container-kasy-l2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons-kasy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 32px;
+  }
+  .buttons-kasy a {
+    margin-bottom: 24px;
+  }
+}
+
+/* serwis-rma */
+.section-serwis-rma {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/background1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* skladanie-komputerow */
+.section-skladanie {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/background2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* dpd-pickup */
+.section-dpd {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/background1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* serwis-elektryki */
+.section-elektryka {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/background2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* automatyka-bram */
+.section-bramy {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/background1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* systemy-alarmowe */
+.section-alarmy {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/background2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* monitoring */
+.section-monitoring {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 100%),
+    url("../../assets/background1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ─── SHARED SLIDE CONTAINER (used by all new sections) ─── */
+.marketing-container-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 8%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.marketing-container-slide h1 {
+  color: white;
+  font-size: 60px;
+  padding-top: 32px;
+}
+
+.marketing-container-slide-l2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.marketing-container-slide-l2 h2 {
+  color: white;
+  font-size: 24px;
+  max-width: 540px;
+}
+
+.buttons-slide {
+  padding-top: 100px;
+}
+
+.buttons-slide a {
+  margin-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .marketing-container-slide h1 {
+    font-size: 36px;
+    padding-top: 16px;
+  }
+  .marketing-container-slide-l2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 32px;
+  }
+  .buttons-slide a {
+    margin-bottom: 24px;
+  }
+}
+
+.marketing-section {
+  height: 520px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
+  padding: 0;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.span-red {
+  color: #8a1111;
+  font-weight: 800;
+  font-size: 28px;
 }
 
 .marketing-content {
@@ -41,16 +294,6 @@
   font-weight: 500;
   margin-bottom: 24px;
   font-family: "Inter", sans-serif;
-}
-
-.marketing-badge-surface {
-  background-color: #e5e2e3;
-  color: #58413e;
-}
-
-.marketing-badge-secondary {
-  background-color: #c3ecd7;
-  color: #00743a;
 }
 
 .marketing-title {
@@ -93,6 +336,28 @@
   background-color: #a12b23; /* primary-container */
 }
 
+.marketing-btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff; /* primary */
+  color: #000000;
+  padding: 16px 32px;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 10px 15px -3px rgba(128, 17, 15, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.marketing-btn-white:hover {
+  background-color: rgb(255, 206, 204); /* primary-container */
+}
+
 .marketing-image-wrapper {
   height: 500px;
   width: 100%;
@@ -130,7 +395,7 @@
 
 @media (max-width: 768px) {
   .marketing-section {
-    padding: 48px 0;
+    padding: 32px 0;
     min-height: auto;
   }
 
