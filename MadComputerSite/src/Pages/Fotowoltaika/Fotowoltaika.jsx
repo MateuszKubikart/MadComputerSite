@@ -211,59 +211,62 @@ function Photovoltaics() {
                 domostwom.
               </p>
             </div>
-            <Link to="/Fotowoltaika/Projekty" className="view-gallery">
-              Zobacz Całą Galerię <ArrowRight size={48} strokeWidth={2.25} />
-            </Link>
           </div>
 
-          <div className="projects-grid">
-            <div className="project-card">
-              <div className="img-placeholder project-img">
-                <img
-                  src={PhotovoltaicsPhoto1}
-                  alt="Projekt Instalacji Fotowoltaiki"
-                />
-                <div className="badge badge-green solid project-badge">
-                  Firma 25kWp
+          <div className="projects-wrapper">
+            <div className="projects-grid">
+              <div className="project-card">
+                <div className="img-placeholder project-img">
+                  <img
+                    src={PhotovoltaicsPhoto1}
+                    alt="Projekt Instalacji Fotowoltaiki"
+                  />
+                  <div className="badge badge-green solid project-badge">
+                    Firma 25kWp
+                  </div>
+                </div>
+                <div className="project-info">
+                  <h4>Instalacja Dla Firm</h4>
+                  <p>Obniżenie rocznych kosztów operacyjnych o 45%.</p>
                 </div>
               </div>
-              <div className="project-info">
-                <h4>Instalacja Dla Firm</h4>
-                <p>Obniżenie rocznych kosztów operacyjnych o 45%.</p>
+
+              <div className="project-card">
+                <div className="img-placeholder project-img">
+                  <img
+                    src={PhotovoltaicsPhoto2}
+                    alt="Projekt Instalacji Fotowoltaiki"
+                  />
+                  <div className="badge badge-green solid project-badge">
+                    Dom 8kWp
+                  </div>
+                </div>
+                <div className="project-info">
+                  <h4>Zielona Rezydencja</h4>
+                  <p>Niezależność energetyczna dla 4-osobowej rodziny.</p>
+                </div>
+              </div>
+
+              <div className="project-card">
+                <div className="img-placeholder project-img">
+                  <img
+                    src={PhotovoltaicsPhoto3}
+                    alt="Projekt Instalacji Fotowoltaiki"
+                  />
+                  <div className="badge badge-green solid project-badge">
+                    Gospodarstwo 40kWp
+                  </div>
+                </div>
+                <div className="project-info">
+                  <h4>Samowystarczalna Instalacja w Lesie</h4>
+                  <p>System odporny na zewnętrze braki w dostawie prądu.</p>
+                </div>
               </div>
             </div>
 
-            <div className="project-card">
-              <div className="img-placeholder project-img">
-                <img
-                  src={PhotovoltaicsPhoto2}
-                  alt="Projekt Instalacji Fotowoltaiki"
-                />
-                <div className="badge badge-green solid project-badge">
-                  Dom 8kWp
-                </div>
-              </div>
-              <div className="project-info">
-                <h4>Zielona Rezydencja</h4>
-                <p>Niezależność energetyczna dla 4-osobowej rodziny.</p>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <div className="img-placeholder project-img">
-                <img
-                  src={PhotovoltaicsPhoto3}
-                  alt="Projekt Instalacji Fotowoltaiki"
-                />
-                <div className="badge badge-green solid project-badge">
-                  Gospodarstwo 40kWp
-                </div>
-              </div>
-              <div className="project-info">
-                <h4>Samowystarczalna Instalacja w Lesie</h4>
-                <p>System odporny na zewnętrze braki w dostawie prądu.</p>
-              </div>
-            </div>
+            <Link to="/Fotowoltaika/Projekty" className="view-gallery-btn">
+              Zobacz Całą Galerię <ArrowRight size={28} strokeWidth={2.25} />
+            </Link>
           </div>
         </div>
       </section>
